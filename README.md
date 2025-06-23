@@ -323,17 +323,11 @@ The video demonstrates:
 
 - **Live Platform:** https://app.boardbreeze.io
 - **Hackathon Repository:** https://github.com/mgesteban/boardbreeze-lambda-hackathon
-- **Demo Video:** [YouTube Link]
-- **Team:** BoardBreeze Development Team
+- **Demo Video:** https://vimeo.com/1087572893?share=copy
+
 
 ---
 
-## License
-
-This hackathon submission is provided under MIT License for educational and evaluation purposes.
-
----
-
-*BoardBreeze: Where governance meets innovation, powered by AWS Lambda.*
+BoardBreeze: Where governance meets innovation, powered by AWS Lambda.*
 
 **Ready to transform your board meetings? Minutes in Minutes. Problems into Solutions. Ideas into Impact.**
