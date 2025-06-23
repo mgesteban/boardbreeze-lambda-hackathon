@@ -1,0 +1,55 @@
+{
+  "LambdaConfigurations": [
+    {
+      "Id": "BoardBreezeAudioProcessing",
+      "LambdaFunctionArn": "arn:aws:lambda:us-east-2:YOUR_ACCOUNT_ID:function:boardbreeze-audio-splitter",
+      "Events": [
+        "s3:ObjectCreated:*"
+      ],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {
+              "Name": "suffix",
+              "Value": ".mp3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "BoardBreezeAudioProcessingWAV",
+      "LambdaFunctionArn": "arn:aws:lambda:us-east-2:YOUR_ACCOUNT_ID:function:boardbreeze-audio-splitter",
+      "Events": [
+        "s3:ObjectCreated:*"
+      ],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {
+              "Name": "suffix",
+              "Value": ".wav"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "Id": "BoardBreezeAudioProcessingM4A",
+      "LambdaFunctionArn": "arn:aws:lambda:us-east-2:YOUR_ACCOUNT_ID:function:boardbreeze-audio-splitter",
+      "Events": [
+        "s3:ObjectCreated:*"
+      ],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {
+              "Name": "suffix",
+              "Value": ".m4a"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
