@@ -1,0 +1,37 @@
+{
+  "name": "boardbreeze-audio-splitter",
+  "version": "1.0.0",
+  "description": "AWS Lambda function for splitting large audio files for BoardBreeze",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "./deploy.sh",
+    "package": "zip -r boardbreeze-audio-splitter.zip index.js node_modules/ package.json"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "audio",
+    "ffmpeg",
+    "transcription",
+    "boardbreeze"
+  ],
+  "author": "BoardBreeze Team",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.1691.0",
+    "fluent-ffmpeg": "^2.1.2"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgesteban/boardbreeze-lambda-hackathon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mgesteban/boardbreeze-lambda-hackathon/issues"
+  },
+  "homepage": "https://github.com/mgesteban/boardbreeze-lambda-hackathon#readme"
+}
